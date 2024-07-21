@@ -7,10 +7,12 @@ export const App = () => {
         justifyContent: 'center',
         alignItems: 'center',
         fontSize: 40,
-        color: '#010101'
+        color: '#fff'
       }}
     >
-      React homework template
+      GoIT Philippines <br />
+      Homework no. 8 <br />
+      Initialized By :  ArdevazSign
     </div>
   );
 };
