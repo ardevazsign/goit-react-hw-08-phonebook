@@ -15,7 +15,7 @@ export const Navigation = () => {
       </NavLink>
       {isLoggedIn && (
         <NavLink
-          to="/Contacts"
+          to="/contacts"
           className={({ isActive }) => (isActive ? css.linkActive : css.link)}
         >
           Contacts
