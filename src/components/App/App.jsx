@@ -33,8 +33,10 @@ export const App = () => {
         <Route
           path="/register"
           element={
-            // prettier-ignore
-            <RestrictedRoute redirectTo="/contacts" component={<RegisterPage />} />
+            <RestrictedRoute
+              redirectTo="/contacts"
+              component={<RegisterPage />}
+            />
           }
         />
         <Route

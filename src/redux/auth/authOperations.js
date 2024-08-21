@@ -36,7 +36,7 @@ export const logIn = createAsyncThunk(
   'auth/login',
   async ({ email, password }, thunkAPI) => {
     try {
-      const res = await axios.post('users/login', { email, password });
+      const res = await axios.post('/users/login', { email, password });
       // After successful login, add the token to the HTTP header
       setAuthHeader(res.data.token);
       return res.data;
@@ -73,7 +73,6 @@ export const refreshUser = createAsyncThunk(
       // if there is no token, exit without performing any request
       return thunkAPI.rejectWithValue('Unable to fetch user');
     }
-
     try {
       //  if there is a token, add it to the HTTP header and perform the request
       setAuthHeader(persistedToken);

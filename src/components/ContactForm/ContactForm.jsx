@@ -3,7 +3,7 @@ import { useState } from 'react';
 import css from './ContactForm.module.css';
 // import PropTypes from 'prop-types';
 import { useDispatch, useSelector } from 'react-redux';
-import { addContact } from '../../redux/contacts/contactsSlice';
+import { addContact } from '../../redux/contacts/contactsOperation';
 import { selectContacts } from '../../redux/contacts/contactsSelector';
 
 export const ContactForm = () => {
